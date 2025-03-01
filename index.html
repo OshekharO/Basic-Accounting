@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Accounting</title>
+    <meta name="description" content="A basic accounting site explaining journal, ledger, cashbook, petty cashbook, branches of accounting, types.of.accounts, and more with examples and tables." />
+    <meta name="keywords" content="basic accounting, journal, ledger, cashbook, petty cashbook, branches of accounting, types of accounts, personal account, real account, nominal account, double-entry system, accounting period, accrual basis, cash basis, matching principle, going concern assumption, consistency principle, materiality, prudence, financial accounting, managerial accounting, tax accounting, auditing, cost accounting, forensic accounting">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://saksham.thedev.id/Basic-Accounting" />
+    <meta property="og:title" content="Basic Accounting" />
+    <meta property="og:description" content="A basic accounting site explaining journal, ledger, cashbook, petty cashbook, branches of accounting, types of accounts, and more with examples and tables." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://saksham.thedev.id/Basic-Accounting" />
+    <meta property="twitter:title" content="Basic Accounting" />
+    <meta property="twitter:description" content="A basic accounting site explaining journal, ledger, cashbook, petty cashbook, branches of accounting, types of accounts, and more with examples and tables." />
+
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://saksham.thedev.id/Basic-Accounting" />
+
+    <style>
+      .category-title {
+        background: linear-gradient(45deg, #6c5ce7, #a66efa);
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 2rem 0 1rem;
+        font-weight: 700;
+      }
+      .accordion-button {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+        border-radius: 0.5rem;
+        font-weight: 600;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #3d3d3d;
+        color: #fff;
+      }
+      .accordion-body {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .table {
+        color: #e0e0e0;
+        margin-top: 1rem;
+      }
+      .table th,
+      .table td {
+        border-color: #444;
+      }
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #3d3d3d;
+      }
+      .scrollable-table {
+        max-height: 300px;
+        overflow-y: auto;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-body-tertiary">
+    <div class="container py-4">
+      <header class="text-center mb-5">
+        <h1 class="display-4 fw-bold mb-3">Basic Accounting</h1>
+      </header>
+
+      <main>
+        <!-- Journal Section -->
+        <section id="journal">
+          <h2 class="category-title">📒 Journal</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#journal-info">
+                  What is a Journal?
+                </button>
+              </h2>
+              <div id="journal-info" class="accordion-collapse collapse.show">
+                <div class="accordion-body">
+                  <p>
+                    A <strong>Journal</strong> is the first book of accounts where all financial transactions are recorded in chronological order. It is also known as the <strong>Book of Original Entry</strong>. Each transaction is recorded
+                    as a journal entry, which includes the date, accounts involved, amounts, and a brief description.
+                  </p>
+                  <h5>Golden Rules of Journal:</h5>
+                  <ul>
+                    <li><strong>Personal Account:</strong> Debit the receiver, Credit the giver.</li>
+                    <li><strong>Real Account:</strong> Debit what comes in, Credit what goes out.</li>
+                    <li><strong>Nominal Account:</strong> Debit all expenses and losses, Credit all incomes and gains.</li>
+                  </ul>
+                  <h5>Step-by-Step Guide:</h5>
+                  <ol>
+                    <li>Identify the accounts involved in the transaction.</li>
+                    <li>Determine whether each account is debited or credited based on the golden rules.</li>
+                    <li>Record the transaction in the journal with the date, accounts, amounts, and description.</li>
+                  </ol>
+                  <h5>Example of a Journal Entry:</h5>
+                  <div class="scrollable-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Account</th>
+                          <th>Debit (Dr)</th>
+                          <th>Credit (Cr)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2023-10-01</td>
+                          <td>Cash</td>
+                          <td>$1,000</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>2023-10-01</td>
+                          <td>Capital</td>
+                          <td></td>
+                          <td>$1,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ledger Section -->
+        <section id="ledger">
+          <h2 class="category-title">📚 Ledger</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ledger-info">
+                  What is a Ledger?
+                </button>
+              </h2>
+              <div id="ledger-info" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    A <strong>Ledger</strong> is a book of accounts where all journal entries are posted to their respective accounts. It is also known as the <strong>Book of Final Entry</strong>. The ledger helps in summarizing the
+                    financial position of each account.
+                  </p>
+                  <h5>Golden Rules of Ledger:</h5>
+                  <ul>
+                    <li>Each account has a separate ledger page.</li>
+                    <li>Post journal entries to the respective ledger accounts.</li>
+                    <li>Calculate the balance of each account after posting.</li>
+                  </ul>
+                  <h5>Step-by-Step Guide:</h5>
+                  <ol>
+                    <li>Transfer journal entries to the respective ledger accounts.</li>
+                    <li>Calculate the total debits and credits for each account.</li>
+                    <li>Determine the balance of each account (debit or credit).</li>
+                  </ol>
+                  <h5>Example of a Ledger Account:</h5>
+                  <div class="scrollable-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Debit (Dr)</th>
+                          <th>Credit (Cr)</th>
+                          <th>Balance</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2023-10-01</td>
+                          <td>Capital</td>
+                          <td></td>
+                          <td>$1,000</td>
+                          <td>$1,000 (Cr)</td>
+                        </tr>
+                        <tr>
+                          <td>2023-10-02</td>
+                          <td>Purchase</td>
+                          <td>$500</td>
+                          <td></td>
+                          <td>$500 (Cr)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cashbook Section -->
+        <section id="cashbook">
+          <h2 class="category-title">💰 Cashbook</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cashbook-info">
+                  What is a Cashbook?
+                </button>
+              </h2>
+              <div id="cashbook-info" class="accordion-collapse collapse.show">
+                <div class="accordion-body">
+                  <p>A <strong>Cashbook</strong> is a financial journal that records all cash receipts and payments, including bank deposits and withdrawals. It serves as both a journal and a ledger for cash transactions.</p>
+                  <h5>Golden Rules of Cashbook:</h5>
+                  <ul>
+                    <li>Record all cash inflows (receipts) on the debit side.</li>
+                    <li>Record all cash outflows (payments) on the credit side.</li>
+                    <li>Maintain a running balance after each transaction.</li>
+                  </ul>
+                  <h5>Step-by-Step Guide:</h5>
+                  <ol>
+                    <li>Record cash receipts on the debit side of.the.cashbook.</li>
+                    <li>Record cash payments on the credit side of the cashbook.</li>
+                    <li>Calculate the running balance after each transaction.</li>
+                  </ol>
+                  <h5>Example of a Cashbook:</h5>
+                  <div class="scrollable-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Receipts (Dr)</th>
+                          <th>Payments (Cr)</th>
+                          <th>Balance</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2023-10-01</td>
+                          <td>Capital</td>
+                          <td>$1,000</td>
+                          <td></td>
+                          <td>$1,000</td>
+                        </tr>
+                        <tr>
+                          <td>2023-10-02</td>
+                          <td>Purchase</td>
+                          <td></td>
+                          <td>$500</td>
+                          <td>$500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Petty Cashbook Section -->
+        <section id="petty-cashbook">
+          <h2 class="category-title">💵 Petty Cashbook</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#petty-cashbook-info">
+                  What is a Petty Cashbook?
+                </button>
+              </h2>
+              <div id="petty-cashbook-info" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>A <strong>Petty Cashbook</strong> is used to record small, day-to-day expenses such as office supplies, postage, or minor repairs. It helps in managing small cash transactions without affecting the main cashbook.</p>
+                  <h5>Golden Rules of Petty Cashbook:</h5>
+                  <ul>
+                    <li>Record all petty cash expenses with proper vouchers.</li>
+                    <li>Maintain a running balance of petty cash.</li>
+                    <li>Replenish the petty cash fund when it runs low.</li>
+                  </ul>
+                  <h5>Step-by-Step Guide:</h5>
+                  <ol>
+                    <li>Record petty cash expenses with dates and descriptions.</li>
+                    <li>Attach vouchers for each expense.</li>
+                    <li>Calculate the remaining petty cash balance.</li>
+                  </ol>
+                  <h5>Example of a Petty Cashbook:</h5>
+                  <div class="scrollable-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Amount</th>
+                          <th>Balance</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2023-10-01</td>
+                          <td>Office Supplies</td>
+                          <td>$50</td>
+                          <td>$950</td>
+                        </tr>
+                        <tr>
+                          <td>2023-10-02</td>
+                          <td>Postage</td>
+                          <td>$20</td>
+                          <td>$930</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Branches of Accounting Section -->
+        <section id="branches-of-accounting">
+          <h2 class="category-title">📚 Branches of Accounting</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#branches-info">
+                  What are the Branches of Accounting?
+                </button>
+              </h2>
+              <div id="branches-info" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Accounting is a broad field that can be divided into several branches, each with its own specific focus and purpose. Here are the main branches:
+                  </p>
+                  <h5>Main Branches of Accounting:</h5>
+                  <ul>
+                    <li><strong>Financial Accounting:</strong> Records, classifies, and summarizes financial transactions to prepare financial statements for external users.</li>
+                    <li><strong>Managerial Accounting:</strong> Provides financial and non-financial information to managers for decision-making, planning, and control.</li>
+                    <li><strong>Tax Accounting:</strong> Focuses on tax planning and compliance with tax laws and regulations.</li>
+                    <li><strong>Auditing:</strong> Involves the examination and verification of financial statements and records to ensure accuracy and compliance with laws and regulations.</li>
+                    <li><strong>Cost Accounting:</strong> Tracks the costs of production and services to help in pricing and cost control.</li>
+                    <li><strong>Forensic Accounting:</strong> Applies accounting, auditing, and investigative skills to legal issues and disputes.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Types of Accounts Section -->
+        <section id="types-of-accounts">
+          <h2 class="category-title">📚 Types of Accounts</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#types-info">
+                  What are the Types of Accounts?
+                </button>
+              </h2>
+              <div id="types-info" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Accounts in accounting are categorized into three main types based on their nature and purpose:
+                  </p>
+                  <h5>Main Types of Accounts:</h5>
+                  <ul>
+                    <li><strong>Personal Accounts:</strong> Relate to individuals, firms, or organizations. Examples include capital accounts, drawings, and creditors/debtors.</li>
+                    <li><strong>Real Accounts:</strong> Relate to assets or properties. Examples include land, buildings, machinery, and furniture.</li>
+                    <li><strong>Nominal.Accounts:</strong> Relate to income, expenses, gains, and losses. Examples include sales, purchases, salaries, and rent.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other Foundational Concepts Section -->
+        <section id="foundational-concepts">
+          <h2 class="category-title">📚 Foundational Concepts</h2>
+          <div class="accordion mb-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#concepts-info">
+                  What are Some Foundational Concepts in Accounting?
+                </button>
+              </h2>
+              <div id="concepts-info" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Understanding these foundational concepts is crucial for grasping the principles of accounting:
+                  </p>
+                  <h5>Key Foundational Concepts:</h5>
+                  <ul>
+                    <li><strong>Double-Entry System:</strong> Every transaction affects at least two accounts, ensuring that the accounting equation (Assets = Liabilities + Equity) remains balanced.</li>
+                    <li><strong>Accounting Period:</strong> The time frame for which financial statements are prepared, typically a month, quarter, or year.</li>
+                    <li><strong>Accrual Basis Accounting:</strong> Recognizes revenues when earned and expenses when incurred, regardless of when cash is received or paid.</li>
+                    <li><strong>Cash Basis Accounting:</strong> Recognizes revenues when cash is received and expenses when cash is paid.</li>
+                    <li><strong>Matching Principle:</strong> Expenses should be matched with the revenues they help to generate in the same accounting period.</li>
+                    <li><strong>Going Concern Assumption:</strong> Assumes that a business will continue to operate indefinitely and not be liquidated.</li>
+                    <li><strong>Consistency Principle:</strong> Consistent accounting methods should be used from period to period to ensure comparability.</li>
+                    <li><strong>Materiality:</strong> Information is material if its omission or misstatement could influence the decision of users of financial statements.</li>
+                    <li><strong>Prudence:</strong> Anticipate no profit and provide for all possible losses.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="text-center mt-5 py-4 text-body-secondary">
+        <p>Made with ❤️ by <a href="https://github.com/OshekharO" class="text-decoration-none">OshekharO</a></p>
+        <small>Hosted on Github</small>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
